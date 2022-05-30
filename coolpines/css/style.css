@@ -1,0 +1,436 @@
+﻿body
+{
+    background-image: url("../images/bg.jpg");
+    background-color: whitesmoke;
+}
+#icon{
+    width: 4%;
+}
+#navbar{
+    padding: 1rem;
+}
+#navbar {
+    background: white;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+footer{
+    position: absolute;
+    width: 99%;
+    background: white;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.padding {
+    padding: 1.5rem;
+}
+.a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+strong, .a:hover {
+    color: #0ddf6b;
+    }
+ul li {
+    list-style-type: none;
+    font-family: Montserrat;
+    }
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+strong{
+    font-family: Nixie One;
+}
+input{
+    border: 1px solid dodgerblue;
+}
+
+.fr{
+    float: right;
+}
+#images{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.img {
+    width: 24rem;
+    margin: 1rem;
+    position: relative;
+    border-radius: 5%;
+    animation: Opanimation, Fonanimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes Opanimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}@keyframes Opanimation2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+
+@keyframes Fonanimation {
+    0% {
+        width: 0rem;
+    }
+
+    100% {
+        width: 24rem;
+    }
+}@keyframes Fonanimation {
+    0% {
+        width: 0rem;
+    }
+
+    100% {
+        width: 24rem;
+    }
+}
+@keyframes Fonanimation2 {
+    0% {
+        width: 0rem;
+    }
+
+    100% {
+        width: 19rem;
+    }
+}
+/*
+.sd:hover{
+   opacity: 0.8;
+    animation: Tranimation,Opanimation2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}*/
+
+
+.sd {
+    opacity: 0;
+    position: absolute;
+    display: grid;
+    color: #000;
+    background-color: #fff;
+    margin: 1rem;
+    margin-left: 20%;
+    width: inherit;
+    bottom: 15%;
+    font-size: 100%;
+    padding: .5rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+@keyframes Tranimation {
+    0% {
+        transform: translate(100px,0px);
+    }
+}
+#more_info{
+    text-align: right;
+}
+.img2 {
+    position: relative;
+}
+.social_img{
+    width: 10%;
+    padding: 0.5rem;
+}
+#social{
+    padding-left: 1rem;
+}
+.description{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.descr{
+    margin: 3rem;
+    background-color: #87fbefb4;
+    padding: 1rem;
+    border-radius: 3%;
+    height: fit-content;
+}
+.message {
+    height: 5rem;
+    width: 50%;
+    border-radius: .5rem;
+}
+input{
+    border-radius: .3rem;
+}
+.send {
+    background-color: #0ddf6b;
+    color: #fff;
+    border-radius: .5rem;
+    border-style: none;
+    padding:1.5rem;
+    padding:.5rem;
+}
+@media(max-width: 1464px){
+    .sd {
+        opacity: 0;
+        position: absolute;
+        display: grid;
+        color: #000;
+        background-color: #fff;
+        margin: 1rem;
+        margin-left: 20%;
+        width: 59%;
+        bottom: 15%;
+        font-size: 100%;
+        padding: .5rem;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+}
+@media(max-width: 1200px) {
+    #navbar {
+        height: 5.5rem;
+        width: 140%;
+    }
+
+    #images {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        width: fit-content;
+    }
+
+    .img {
+        width: 20rem;
+        margin: 3rem;
+        margin-left: 10rem;
+        position: relative;
+        border-radius: 5%;
+        animation: Opanimation, Fonanimation;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+
+    .sd {
+        opacity: 0;
+        position: absolute;
+        display: grid;
+        color: #000;
+        background-color: #fff;
+        margin: 1rem;
+        margin-left: 50%;
+        width: 45%;
+        bottom: 15%;
+        font-size: 100%;
+        padding: .5rem;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+
+    footer {
+        width: 130%;
+    }
+    .description {
+        display: grid;
+        grid-template-columns: 35% 65%;
+    }
+    .descr {
+        margin: 3.3rem;
+        margin-left: 10rem;
+        background-color: #87fbefb4;
+        padding: 1rem;
+        border-radius: 3%;
+        height: fit-content;
+    }
+}
+
+@media(max-width: 1030px) {
+    #navbar {
+        height: 5.5rem;
+        width: 90%;
+    }
+
+    #images {
+        display: grid;
+        grid-template-columns: 49% 49%;
+    }
+
+    .img {
+        width: 19rem;
+        margin: 2rem;
+        margin-left: 5rem;
+        position: relative;
+        border-radius: 5%;
+        animation: Opanimation, Fonanimation2;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+
+    .sd {
+        opacity: 0;
+        position: absolute;
+        display: grid;
+        color: #000;
+        background-color: #fff;
+        margin: 1rem;
+        margin-left: 30%;
+        width: 45%;
+        bottom: 15%;
+        font-size: 100%;
+        padding: .5rem;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+    footer {
+        width: 90%;
+    }
+    .descr {
+        margin: 3.3rem;
+        margin-left: 10rem;
+        background-color: #87fbefb4;
+        padding: 1rem;
+        border-radius: 3%;
+        height: fit-content;
+    }
+}
+@media(max-width: 767px) {
+    #navbar {
+        height: 5.5rem;
+        width: fit-content;
+    }
+    .img {
+        width: 22rem;
+        margin: 1rem;
+        position: relative;
+        border-radius: 5%;
+        animation: Opanimation, Fonanimation2;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+    #images {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    footer{
+        width: 100%;
+    }
+    .description {
+        display: grid;
+        grid-template-columns: 90%;
+    }
+    .imgdescr{
+        margin-left: 10rem;
+    }
+    .descr {
+        margin-left: 10rem;
+        width: 20rem;
+        background-color: #87fbefb4;
+        padding: 1rem;
+        border-radius: 3%;
+
+    }
+    .message {
+        height: 5rem;
+        width: 100%;
+        border-radius: .5rem;
+    }
+}
+@media(max-width: 732px){
+    #navbar {
+        height: 5.6rem;
+        width: fit-content;
+    }
+}
+@media(max-width: 692px){
+    #navbar {
+        height: 5.6rem;
+        width: 105%;
+    }
+}
+ @media(max-width: 648px){
+    footer {
+        width: 125%;
+    }
+ } 
+ @media(max-width: 625px){
+    #navbar {
+        height: 5.6rem;
+        width: 120%;
+    }
+}
+ @media(max-width: 573px){
+    footer {
+        width: 150%;
+    }
+ }
+ @media(max-width: 542px){
+    #navbar {
+        height: 5.6rem;
+        width: 130%;
+    }
+}
+ @media(max-width: 510px){
+    #navbar {
+        height: 5.6rem;
+        width: 135%;
+    }
+
+    .img {
+        width: 19rem;
+        margin: .5rem;
+        margin-left: 5rem;
+        position: relative;
+        border-radius: 5%;
+        animation: Opanimation, Fonanimation2;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+}
+@media(max-width: 480px) {
+    .padding {
+        padding: .5rem;
+    }
+    #navbar{
+        height: 5rem;
+        width: fit-content;
+    }
+    #images {
+        grid-template-columns: 100%;
+    }
+    .sd {
+        opacity: 0;
+        position: absolute;
+        display: grid;
+        color: #000;
+        background-color: #fff;
+        width: 60%;/*
+        margin-left: 30% ;*/
+        bottom: 15%;
+        font-size: 100%;
+        padding: .5rem;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+    footer {
+        margin-left: 1rem;
+        margin-right: 1em;
+        position: absolute;
+        width: max-content;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+    }
+    .rfooter{
+        margin-top: 1rem;
+    }
+}
